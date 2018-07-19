@@ -1,7 +1,7 @@
 
 FROM mikhailmerkulov/teamcity-docker-agent-compose
 
-LABEL maintainer "Mikhail Merkulov <mikhail.m@itomy.ch>"
+LABEL maintainer "Mikhail Merkulov <mikhail.merkulov@itomy.ch>"
 
 # Install .NET CLI dependencies
 RUN apt-get update \
