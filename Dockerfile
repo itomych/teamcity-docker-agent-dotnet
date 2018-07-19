@@ -3,6 +3,8 @@ FROM mikhailmerkulov/teamcity-docker-agent-compose
 
 LABEL maintainer "Mikhail Merkulov <mikhail.merkulov@itomy.ch>"
 
+RUN apt-get update && apt-get install -y apt-transport-https
+
 # Install .NET CLI dependencies
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
