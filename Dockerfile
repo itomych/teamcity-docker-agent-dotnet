@@ -3,7 +3,8 @@ FROM mikhailmerkulov/teamcity-docker-agent-compose
 
 LABEL maintainer "Mikhail Merkulov <mikhail.merkulov@itomy.ch>"
 
-RUN apt-get update && apt-get install -y apt-transport-https
+ADD libicu52_52.1-8_amd64.deb /tmp/libicu52_52.1-8_amd64.deb
+RUN dpkg -i /tmp/libicu52_52.1-8_amd64.deb
 
 # Install .NET CLI dependencies
 RUN apt-get update \
@@ -11,7 +12,6 @@ RUN apt-get update \
         libc6 \
         libgcc1 \
         libgssapi-krb5-2 \
-        libicu57 \
         liblttng-ust0 \
         libssl1.0.2 \
         libstdc++6 \
