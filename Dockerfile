@@ -1,5 +1,5 @@
 
-FROM mikhailmerkulov/teamcity-docker-agent-compose
+FROM mikhailmerkulov/teamcity-docker-agent-cloud
 
 LABEL maintainer "Mikhail Merkulov <mikhail.merkulov@itomy.ch>"
 
