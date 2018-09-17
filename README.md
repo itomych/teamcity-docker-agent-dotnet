@@ -2,7 +2,7 @@
 
 Teamcity agent image based on https://hub.docker.com/r/mikhailmerkulov/teamcity-docker-agent-cloud// with following additions:
 
-1. .NET Core SDK 2.1 (build 2.1.300)
+1. .NET Core SDK 2.1 (build 2.1.402)
 
 # Automated builds
 
